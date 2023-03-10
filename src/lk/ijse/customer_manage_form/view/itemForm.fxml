@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.customer_manage_form.controller.ItemController">
+   <children>
+      <Label contentDisplay="CENTER" graphicTextGap="6.0" layoutX="125.0" layoutY="64.0" prefHeight="31.0" prefWidth="351.0" text="ITEM FORM MANAGER" textFill="#d70707" underline="true">
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+         <font>
+            <Font name="Bodoni MT Black" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="73.0" layoutY="40.0" prefHeight="0.0" prefWidth="454.0" />
+      <Separator layoutX="67.0" layoutY="502.0" prefHeight="0.0" prefWidth="454.0" />
+      <Separator layoutX="64.0" layoutY="39.0" orientation="VERTICAL" prefHeight="463.0" prefWidth="6.0" />
+      <Separator layoutX="521.0" layoutY="40.0" orientation="VERTICAL" prefHeight="463.0" prefWidth="0.0" />
+      <Label layoutX="118.0" layoutY="150.0" prefHeight="35.0" prefWidth="85.0" text="Item ID">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="118.0" layoutY="211.0" prefHeight="35.0" prefWidth="115.0" text="Item Name">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="118.0" layoutY="283.0" prefHeight="35.0" prefWidth="85.0" text="Price">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="118.0" layoutY="350.0" prefHeight="35.0" prefWidth="85.0" text="Quantity">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <TextField fx:id="txtId" layoutX="281.0" layoutY="148.0" onAction="#idOnAction" prefHeight="35.0" prefWidth="187.0" />
+      <TextField fx:id="txtName" layoutX="281.0" layoutY="213.0" prefHeight="35.0" prefWidth="187.0" />
+      <TextField fx:id="txtPrice" layoutX="281.0" layoutY="283.0" prefHeight="35.0" prefWidth="187.0" />
+      <TextField fx:id="txtQuantity" layoutX="281.0" layoutY="348.0" prefHeight="35.0" prefWidth="187.0" />
+      <Button layoutX="102.0" layoutY="431.0" mnemonicParsing="false" onAction="#onSave" prefHeight="45.0" prefWidth="85.0" text="SAVE">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="232.0" layoutY="431.0" mnemonicParsing="false" onAction="#onDeleat" text="DELEAT" textFill="#720606">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button layoutX="375.0" layoutY="431.0" mnemonicParsing="false" onAction="#onUpdate" text="UPDATE">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="139.0" layoutY="514.0" mnemonicParsing="false" onAction="#onCustemerManageForm" prefHeight="35.0" prefWidth="286.0" text="&lt;Customer Manage form &gt;" textFill="#000000bf">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
